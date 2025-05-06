@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Inicio/Estrutura-Projeto-Ouvidoria-J.css">
-    <title>TELA INICIAL</title>
+    <title>SOBRE O PROJETO</title>
+    <link rel="stylesheet" href="Sobre o Projeto/sobre-o-projeto.css">
 </head>
 
-<body class="bdyProjeto">
+<body>
 
     <!--Menu // Cabeçalho-->
 
@@ -19,167 +20,53 @@
             ESCOLA ESTADUAL PROF. MARIA NALVA XAVIER ALBUQUERQUE
         </h1>
         <div class="informacao">
-            <a href="Sobre o Projeto/Sobre-o-projeto.html">SOBRE O PROJETO</a>
+            <a href="Inicio/Formulario.html">FORMULÁRIO</a>
         </div>
     </header>
 
-    <!--Texto e Título para o Formulário-->
+    <!-- Texto Inicial -->
 
-    <h1 id="tituloPrincipal">PROJETO OUVIDORIA JOVEM</h1>
-
-    <p class="textoFormulário">
-        <strong>OBSERVAÇÃO:</strong> Qualquer informação que for colocada nesse formulário é apenas para melhoria da
-        instituição, e vai ser enviada e recebida de forma totalmente <strong>restrita</strong> assegurando a segurança
-        dos demais
-        alunos.
-    </p>
-
-    <!--Estrutura do Formulário Inicio-->
+    <h1 class="tituloSobreProjeto">SOBRE O PROJETO OUVIDORIA JOVEM:</h1>
 
     <section>
-        <form action="https://formsubmit.co/profissional.alefesantos@hotmail.com" method="post">
 
-            <h2 class="perguntas">FORMULÁRIO:</h2><br>
+        <p class="paragrafSobreProjeto">
+            Esse projeto foi criado para complementação da disciplina de Atividades de Extensão: Integração de
+            Competências Para Transformar o Eu, com o instuito também de buscar melhorias na instituição escolhida,
+            atender as vozes dos alunos para a melhoria da instituição e em sala de aula, o formulário apesar de ser
+            básico e pequeno tem um objetivo muito grande que é buscar e compreender o que o aluno tem dificuldade em
+            sala de aula e o que pode ser melhorado na instituição.
+        </p>
 
-            <!--Nome do Aluno-->
+        <p class="paragrafSobreProjeto">
+            Esse projeto utiliza duas Linguagens de Estrutura e uma Linguagem de Programação, sendo as <strong>
+                Linguagens de Estrutura: </strong> HTML e CSS, e a <strong> Linguagem de Programação: </strong>
+            JavaScript.
+        </p>
 
-            <div class="colunaform">
-                <label for="nome">Nome do Aluno(a): </label>
-                <input name="Nome de Aluno" type="text" id="nome" required placeholder="Digite seu nome completo"><br>
-
-                <!--Idade do Aluno-->
-
-                <label for="idadeAluno">Idade do Aluno(a): </label>
-                <input class="inputGrande" name="Idade do Aluno" style="width: 48.7%;" type="number" id="idadeAluno"
-                    min="0" max="100" required placeholder="Digite a sua idade"><br>
-
-                <!--JavaScript + HTML: Criação do responsável! (Só aparece se for menor de idade)-->
-
-                <div id="nomeResponsavel" style="display: none;">
-
-                    <label for="responsavel">Nome do Responsável: </label><br>
-                    <input name="Nome do Responsável" type="text" id="responsavel" required
-                        placeholder="Digite o nome do responsável"><br> <br>
-
-                    <label for="idade">Idade do Responsável: </label><br>
-                    <input style="width: 48.5%;" name="Idade do Responsável" type="number" id="idadeResponsavel" min="0"
-                        max="100" required placeholder="Digite a idade do responsável"><br> <br>
-                </div>
-
-
-                <!--Gênero-->
-
-                <label for="genero">Qual o seu gênero?</label>
-                <select name="Gênero" id="genero" required>
-                    <option value=""></option>
-                    <option value="masculino">Masculino</option>
-                    <option value="feminino">Feminino</option>
-                    <option value="nao_binario">Não Binario</option>
-                    <option value="outro">Outro Gênero</option>
-                </select> <br>
-
-                <!--Turma-->
-
-                <label for="turma">Qual a sua turma?</label>
-                <input name="Turma do Aluno" type="text" id="turma" placeholder="Digite qual sua turma?" required><br>
-
-            </div>
-
-            <!--Partes das Perguntas Desempenho do Aluno!-->
-
-            <br>
-            <hr>
-
-            <h2 class="perguntas">QUESTIONÁRIO:</h2>
-
-            <h3>Responda as questões em relação ao desempenho do Aluno!</h3><br>
-
-            <label for="desempenho">Classifique seu desempenho em sala de aula!</label><br><br>
-
-            <div class="estruturaEscolhas">
-                <input type="radio" name="Desempenho do Aluno em Sala de Aula" value="Péssimo" required> Péssimo
-                <input type="radio" name="Desempenho do Aluno em Sala de Aula" value="Ruim" required> Ruim
-                <input type="radio" name="Desempenho do Aluno em Sala de Aula" value="Médio" required> Médio
-                <input type="radio" name="Desempenho do Aluno em Sala de Aula" value="Bom" required> Bom
-                <input type="radio" name="Desempenho do Aluno em Sala de Aula" value="Ótimo" required> Ótimo
-            </div>
-
-            </div> <br>
-
-            <label for="materiaEscolar">Você tem dificuldade em alguma matéria?</label><br><br>
-            <input type="radio" name="Dificuldade do Aluno em Matéria Escolar" id="materiaEscolar" value="Tenho Dificuldade" required>
-            SIM
-            <input type="radio" name="Dificuldade do Aluno em Matéria Escolar" id="materiaEscolar" value="Não tenho dificuldade" required>
-            NÃO
-
-            <h3><br></h3>
-
-            <p>Se "SIM" escreva abaixo quais matérias você tem dificuldade.</p><br>
-            <textarea name="Matérias com Dificuldades" id="materiaEscolar" cols="30" rows="2"></textarea><br><br>
-
-            <label for="materialEscolar">Você tem acesso a materiais (livros, internet, etc...) suficientes para
-                estudar? </label> <br> <br>
-            <input type="radio" required name="Acesso a Material Escolar" id="materialEscolar" value="Sim, tenho!"> SIM
-            <input type="radio" required name="Acesso a Material Escolar" id="materialEscolar" value="Não, estou precisando!"> NÃO 
-
-            <h3><br></h3>
-
-            <hr><br>
-
-            <!--Partes das Perguntas Estrutura da Instituição!-->
-
-            <h3>Responda as questões em relação a estrutura da instituição!</h3><br>
-
-            <label for="estrutura">O quanto você está satisfeito(a) com a estrutura da sua
-                escola?</label><br><br>
-
-            <div class="estruturaEscolhas">
-                <input type="radio" name="Satisfação do Aluno com a Estrutura da Instituição" value="Insatisfeito" required>
-                Insatisfeito
-                <input type="radio" name="Satisfação do Aluno com a Estrutura da Instituição" value="Não Satisfeito" required> Ruim
-                <input type="radio" name="Satisfação do Aluno com a Estrutura da Instituição" value="Meio Insatisfeito" required> Médio
-                <input type="radio" name="Satisfação do Aluno com a Estrutura da Instituição" value="Um pouco Satisfeito" required> Bom
-                <input type="radio" name="Satisfação do Aluno com a Estrutura da Instituição" value="Muito Satisfeito" required>
-                Satisfeito
-            </div>
-
-            <br>
-
-            <label for="melhoriaEscolar">O que pode ser melhorado na instituição em que você estuda? escreva na caixinha
-                abaixo.(opcional)</label><br><br>
-            <textarea name="Opinião do Aluno Sobre a Instituição (Não Obrigatorio)" cols="40" rows="10"></textarea><br><br>
-
-            <label for="merendaEscolar">A merenda oferecida na sua escola é de boa qualidade?</label><br><br>
-            <input type="radio" name="Opinião sobre Merenda" value="Boa Qualidade" required>SIM
-            <input type="radio" name="Opinião sobre Merenda" value="Poderia ser melhor" required>PODERIA SER MELHOR
-            <input type="radio" name="Opinião sobre Merenda" value="Não é muito bom" required>NÃO
-
-            <br><br><br>
-
-            <button type="submit">Enviar Formulário</button>
-            <input type="hidden" name="_next"
-                value="https://dev-alefe.github.io/Inicio/obrigado.html">
-
-        </form>
+        <p class="paragrafSobreProjeto">
+            Desde já agradeço pela contribuição da diretoria por disponibilizar esse projeto para os alunos, pois é de
+            grande importância saber o que o aluno(a) está passando em sala de aula para buscar melhorias na sua
+            educação.
+        </p>
 
     </section>
 
-    <script src="Inicio/Estrutura-Formulário.js"></script>
+        <footer class="rodape">
+
+            <a href="mailto:emaildiretor!!">E-mail do Diretor:</a><br>
+
+            <a href="mailto:testeteste">E-mail da Escola:</a><br>
+
+            <a href="https://wa.me/5584986104359" target="_blank">Número da Escola:</a><br><br>
+
+            <div id="direitoAut">
+                &copy; Desenvolvedor: Alefe Nascimento dos Santos. Todos os direitos reservados.
+            </div>
+        </footer>
+
+    </footer>
+
 </body>
-
-<!--RODAPÉ E COPY DA PÁGINA-->
-
-<footer class="rodape">
-
-    <a href="mailto:emaildiretor!!">E-mail do Diretor:</a><br>
-
-    <a href="mailto:testeteste">E-mail da Escola:</a><br>
-
-    <a href="https://wa.me/5584986104359" target="_blank">Número da Escola:</a><br><br>
-
-    <div id="direitoAut">
-        &copy; Desenvolvedor: Alefe Nascimento dos Santos. Todos os direitos reservados.
-    </div>
-</footer>
 
 </html>
